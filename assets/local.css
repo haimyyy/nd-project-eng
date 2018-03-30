@@ -1,26 +1,26 @@
 body {
-    font-family: 'Varela Round', sans-serif ;
+    font-family: 'Varela Round', sans-serif;
 }
 
-p{
-    font-family: 'Varela Round', sans-serif ;
+p {
+    font-family: 'Varela Round', sans-serif;
 }
 
-#nav{
+#nav {
     display: flex;
     flex-direction: row-reverse;
     padding-right: 0;
 }
 
-#nav > ul.links  {
+#nav > ul.links {
     justify-content: flex-end;
-    font-family: 'Varela Round', sans-serif ;
+    font-family: 'Varela Round', sans-serif;
 
 }
 
-#nav > ul.icons  {
+#nav > ul.icons {
     margin-left: 25px;
-    font-family: 'Varela Round', sans-serif ;
+    font-family: 'Varela Round', sans-serif;
 
 }
 
@@ -29,21 +29,25 @@ p{
 
 }
 
-#main header.major{
+#main header.major {
     text-align: right;
     direction: rtl;
 }
-#main h2{
+
+#main h2 {
     text-align: right;
     direction: rtl;
 }
-#main h1{
+
+#main h1 {
     text-align: center;
     direction: rtl;
 }
+
 #main > .posts {
     padding: 10px 0;
 }
+
 #main > .posts > * {
     width: 50%;
     padding: 0 2rem;
@@ -57,34 +61,94 @@ p{
     object-fit: cover;
 }
 
-#myModal{
+#myModal {
     position: fixed;
     z-index: 999999999;
-    width: 80%;
-    height: 500px;
-    top: 100px;
-    /*display: flex;*/
-    align-self: center;
-    margin-left: 10%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#myModal.open {
+    display: flex;
+}
+
+#myModal.close {
     display: none;
 }
 
-.mainFooter{
+.modal-dialog {
+    display: flex;
+    position: relative;
+    width: auto;
+    height: 600px;
+    background: #fff;
+
+}
+
+.modal-dialog > img {
+    width: 100%;
+    border: 3px solid #fff;
+}
+
+.modal-dialog > button {
+    position: absolute;
+    right: 0;
+    margin: 0 3px 0 0;
+    border-top: 3px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 0px solid #fff;
+    border-bottom: 2px solid #fff;
+    font-size: 30px;
+    padding: 0px 12px 13px 17px;
+    height: 49px;
+    color: #fff !important;
+}
+
+.mainFooter {
     direction: rtl;
 }
-.contactUsContent{
+
+.contactUsContent {
     display: flex;
     flex-direction: row;
 }
 
-.contactUsContent > section{
+.contactUsContent > section {
     flex: 1;
     padding: 20px;
 }
+
 .split {
     border-right: solid 2px #e2e2e2;
 }
+
 .sendButtonContainer {
     display: flex;
     justify-content: flex-end;
+}
+
+.requireAsterisk {
+    color: red;
+}
+
+input[type="tel"] {
+    height: 3rem;
+    border-color: #eeeeee;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: solid 2px;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1rem;
+    text-decoration: none;
+    width: 100%;
 }

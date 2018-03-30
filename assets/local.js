@@ -10,6 +10,7 @@ $(document).ready(function () {
         var aComponent = document.createElement('a');
         imageContainer.className = "imageContainer";
         image.src = "nir-images/" + imageName;
+        image.className = "imageItem";
         aComponent.className = "image fit";
         aComponent.appendChild(image);
         imageContainer.appendChild(aComponent);
@@ -25,6 +26,7 @@ $(document).ready(function () {
         var aComponent = document.createElement('a');
         imageContainer.className = "imageContainer";
         image.src = "nir-images/" + imageName;
+        image.className = "imageItem";
         aComponent.className = "image fit";
         aComponent.appendChild(image);
         imageContainer.appendChild(aComponent);
@@ -33,7 +35,42 @@ $(document).ready(function () {
 
     //on image click
     $(".imageContainer").click(function() {
-        console.log("image.clicked", this)
+        var image =$(this).find(".imageItem");
+        $('#modalImage').attr("src", image.attr("src"));
+        var modal = $('#myModal');
+        modal.removeClass("close");
+        modal.addClass("open")
     })
 
+    $("#closeDialog").click(function() {
+        var modal = $('#myModal');
+        modal.removeClass("open");
+        modal.addClass("close")
+    })
+
+
+
+    $('#submit').click(function() {
+        // var content = $("#mycontactform").serialize();
+        // console.log(content)
+        var name = $('#name');
+        var phone = $('#phone');
+        if (name.val() === ''){
+            alert("נא למלא שם מלא");
+            return;
+        }
+        if (phone.val() === ''){
+            alert("נא למלא טלפון");
+            return;
+        }
+        $.post("http://ineng.eu5.org/send.php", $("#mycontactform").serialize(), function(response) {
+            // $('#success').html(response);
+            //$('#success').hide('slow');
+        });
+
+        $('input').val('');
+        $('#message').val('');
+        alert('תודה על בקשתך, ניצור עמך קשר בהקדם');
+        return false;
+    });
 });
