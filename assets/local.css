@@ -68,3 +68,23 @@ p{
     margin-left: 10%;
     display: none;
 }
+
+.mainFooter{
+    direction: rtl;
+}
+.contactUsContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.contactUsContent > section{
+    flex: 1;
+    padding: 20px;
+}
+.split {
+    border-right: solid 2px #e2e2e2;
+}
+.sendButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+}

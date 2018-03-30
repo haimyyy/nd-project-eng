@@ -1,7 +1,7 @@
 $(document).ready(function () {
     console.log("ready!");
 
-    var images = ["1.jpg", "2.jpg", "3.jpg", "4.jpeg", "5.jpeg", "6.jpeg", "7.JPG", "8.jpeg", "9.jpeg", "10.jpeg", "11.JPG"];
+    var images = [ "2.jpg", "3.jpg", "4.jpeg", "5.jpeg", "6.jpeg", "7.JPG", "8.jpeg", "9.jpeg", "10.jpeg", "11.JPG"];
     var finish = document.getElementsByClassName("finish")[0];
 
     images.forEach(function (imageName) {
