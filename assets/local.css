@@ -167,7 +167,7 @@ input[type="tel"] {
     text-align: right;
 }
 #contactUs {
-    padding-right: 0;
+    padding-right: 0 !important;
 }
 
 @media only screen and (max-width: 600px) {
