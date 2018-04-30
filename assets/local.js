@@ -1,3 +1,5 @@
+const serverUrl = 'https://nd-eng.herokuapp.com/';
+
 $(document).ready(function () {
     console.log("ready!");
     var imageIndex
@@ -100,7 +102,7 @@ $(document).ready(function () {
             alert("נא למלא טלפון");
             return;
         }
-        $.post("http://ineng.eu5.org/send.php", $("#mycontactform").serialize(), function (response) {
+        $.post(serverUrl, $("#mycontactform").serialize(), function (response) {
             // $('#success').html(response);
             //$('#success').hide('slow');
         });
