@@ -6,9 +6,16 @@
 -->
 <html>
 <head>
-    <title>נ.ד. הנדסה</title>
+    <title>נ.ד הנדסה ובנייה</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta property="og:site_name" content="נ.ד הנדסה ובנייה"/>
+    <meta property="og:title" content="נ.ד הנדסה ובנייה"/>
+    <meta property="og:image" content="nir-images/10.jpeg">
+    <meta property="og:url" content="http://nd-eng.co.il/">
+
+
     <link rel="stylesheet" href="assets/css/main.css"/>
     <link rel="stylesheet" href="assets/local.css"/>
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
@@ -23,28 +30,23 @@
         <link rel="stylesheet" href="assets/local.js"/>
     </noscript>
     <link href="https://fonts.googleapis.com/css?family=Rammetto+One|Roboto+Slab|Ubuntu|Varela+Round" rel="stylesheet">
+    <link rel="icon" href="nir-images/favicon.png" type="image/gif" sizes="16x16">
 </head>
-<body class="is-loading">
-
+<body>
+<img src="nir-images/BG.jpg" alt="נד הנדסה" style="display: none;"/>
 <!-- Wrapper -->
 <div id="wrapper" class="fade-in">
 
     <!-- Intro -->
     <div id="intro">
         <h1>נ.ד. הנדסה ובנייה</h1>
-        <h3> החברה המנוהלת ע"י ניר דלל, בעל תואר הנדסאי</h3>
+        <h3> החברה המנוהלת ע"י ניר דלל, בעל תואר הנדסאי בניין ומנהל עבודה מסומך</h3>
 
-        <p> אנו מבצעים עבודות שלד, גמר ותוספות למבנים קיימים.
+        <p> אנו מבצעים עבודות שלד, גמר ושיפוצים כלליים.
             משך פעילותינו היא למעלה מעשור, הניסיון עתיר השנים מאפשר לנו להציע למאגר הרחב של לקוחותינו, מהמגזר הפרטי
             והציבורי, ביצוע מדויק ומקצועי, עמידה בלוחות זמנים ושירות מחויך עד למסירת המפתח.
         </p>
-        <!--<ul class="actions">-->
-            <!--<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>-->
-        <!--</ul>-->
     </div>
-
-    <!-- Header -->
-
 
     <!-- Nav -->
     <nav id="nav">
@@ -64,16 +66,16 @@
 
             <!-- Modal content-->
             <!--<div class="modal-content">-->
-                <!--<div class="modal-header">-->
-                    <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
-                    <!--<h4 class="modal-title">Modal Header</h4>-->
-                <!--</div>-->
-                <!--<div class="modal-body">-->
-                    <!--<p>Some text in the modal.</p>-->
-                <!--</div>-->
-                <!--<div class="modal-footer">-->
-                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                <!--</div>-->
+            <!--<div class="modal-header">-->
+            <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+            <!--<h4 class="modal-title">Modal Header</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+            <!--<p>Some text in the modal.</p>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+            <!--</div>-->
             <!--</div>-->
             <button type="button" class="close" id="closeDialog" data-dismiss="modal">&times;</button>
             <img id="modalImage" src="nir-images/1.jpg" >
@@ -86,7 +88,7 @@
         <article class="post featured">
             <header class="major">
                 <header id="header">
-                <a href="index.html" class="logo"><img src="images/logo.png"/></a>
+                    <a href="index.html" class="logo"><img src="images/logo.png"/></a>
                 </header>
                 <h1>נ.ד. הנדסה ובנייה</h1>
 
@@ -125,56 +127,59 @@
         </section>
 
         <!-- Footer -->
+        <h1 class="contactUsTitle"> יצירת קשר</h1>
+        <footer id="footer" class="mainFooter">
+
+            <section id="contactUs">
+                <form method="post" action="#" id="mycontactform">
+                    <div class="field">
+                        <label for="name"> שם מלא <span class="requireAsterisk"> &#42; </span> </label>
+                        <input type="text" name="name" id="name" required/>
+                    </div>
+                    <div class="field">
+                        <label for="phone"> טלפון<span class="requireAsterisk"> &#42; </span> </label>
+                        <input type="tel" name="phone" id="phone" required/>
+                    </div>
+                    <div class="field">
+                        <label for="email">אימייל</label>
+                        <input type="text" name="email" id="email" required/>
+                    </div>
+                    <div class="field">
+                        <label for="message">תוכן הפניה</label>
+                        <textarea name="message" id="message" rows="3"></textarea>
+                    </div>
+                    <ul class="actions sendButtonContainer">
+                        <li><input id="submit" type="submit" value="שליחה"/></li>
+                    </ul>
+                </form>
+            </section>
+            <section class="split contact">
+                <section class="alt">
+                    <h3>כתובת</h3>
+                    <p>משה דיין 5 <br/>
+                        אור יהודה</p>
+                </section>
+                <section>
+                    <h3>מספר טלפון </h3>
+                    <p><a href="tel:050-2810128">050-2810128</a></p>
+                </section>
+                <section>
+                    <h3>אימייל</h3>
+                    <p><a href="mailto:nd.eng1990@gmail.com">nd.eng1990@gmail.com</a></p>
+                </section>
+                <section>
+                    <h3>רשתות חברתיות</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://www.facebook.com/nd.eng1990/" target="_blank" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
     </section>
 
     <!-- Footer -->
-    <footer id="footer" class="mainFooter">
-        <section id="contactUs">
-            <form method="post" action="#" id="mycontactform">
-                <div class="field">
-                    <label for="name"> שם מלא <span class="requireAsterisk"> &#42; </span> </label>
-                    <input type="text" name="name" id="name" required/>
-                </div>
-                <div class="field">
-                    <label for="phone"> טלפון<span class="requireAsterisk"> &#42; </span> </label>
-                    <input type="tel" name="phone" id="phone" required/>
-                </div>
-                <div class="field">
-                    <label for="email">אימייל</label>
-                    <input type="text" name="email" id="email" required/>
-                </div>
-                <div class="field">
-                    <label for="message">תוכן הפניה</label>
-                    <textarea name="message" id="message" rows="3"></textarea>
-                </div>
-                <ul class="actions sendButtonContainer">
-                    <li><input id="submit" type="submit" value="שליחה"/></li>
-                </ul>
-            </form>
-        </section>
-        <section class="split contact">
-            <section class="alt">
-                <h3>כתובת</h3>
-                <p>העצמאות 81 <br/>
-                    אור יהודה</p>
-            </section>
-            <section>
-                <h3>מספר טלפון </h3>
-                <p><a href="#">050-2810128</a></p>
-            </section>
-            <section>
-                <h3>אימייל</h3>
-                <p><a href="#">in.eng200@gmail.com</a></p>
-            </section>
-            <section>
-                <h3>רשתות חברתיות</h3>
-                <ul class="icons alt">
-                    <li><a href="https://www.facebook.com/nd.eng1990/" target="_blank" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-                </ul>
-            </section>
-        </section>
-    </footer>
+
 
     <!-- Copyright -->
     <div id="copyright">

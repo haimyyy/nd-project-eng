@@ -232,12 +232,12 @@
 							mode: 'bottom',
 							top: '25vh',
 							bottom: '-50vh',
-							enter: function() {
-								$intro.addClass('hidden');
-							},
-							leave: function() {
-								$intro.removeClass('hidden');
-							}
+							// enter: function() {
+							// 	$intro.addClass('hidden');
+							// },
+							// leave: function() {
+							// 	$intro.removeClass('hidden');
+							// }
 						});
 
 					});
@@ -251,12 +251,12 @@
 							mode: 'middle',
 							top: '15vh',
 							bottom: '-15vh',
-							enter: function() {
-								$intro.addClass('hidden');
-							},
-							leave: function() {
-								$intro.removeClass('hidden');
-							}
+							// enter: function() {
+							// 	$intro.addClass('hidden');
+							// },
+							// leave: function() {
+							// 	$intro.removeClass('hidden');
+							// }
 						});
 
 				});
