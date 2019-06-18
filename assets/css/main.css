@@ -3018,10 +3018,10 @@
 /* Wrapper */
 
 	#wrapper {
-		-moz-transition: opacity 0.5s ease;
-		-webkit-transition: opacity 0.5s ease;
-		-ms-transition: opacity 0.5s ease;
-		transition: opacity 0.5s ease;
+		/*-moz-transition: opacity 0.5s ease;*/
+		/*-webkit-transition: opacity 0.5s ease;*/
+		/*-ms-transition: opacity 0.5s ease;*/
+		/*transition: opacity 0.5s ease;*/
 		position: relative;
 		z-index: 1;
 		overflow: hidden;
@@ -3053,14 +3053,14 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			-moz-transition: opacity 1s ease-in-out;
-			-webkit-transition: opacity 1s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out;
-			transition: opacity 1s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			/*-moz-transition: opacity 1s ease-in-out;*/
+			/*-webkit-transition: opacity 1s ease-in-out;*/
+			/*-ms-transition: opacity 1s ease-in-out;*/
+			/*transition: opacity 1s ease-in-out;*/
+			/*-moz-transition-delay: 0.75s;*/
+			/*-webkit-transition-delay: 0.75s;*/
+			/*-ms-transition-delay: 0.75s;*/
+			/*transition-delay: 0.75s;*/
 			background: #1e252d;
 			content: '';
 			display: block;
@@ -3105,10 +3105,10 @@
 		-webkit-justify-content: -webkit-flex-end;
 		-ms-justify-content: -ms-flex-end;
 		justify-content: flex-end;
-		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-		transition: opacity 1s ease, transform 1s ease;
+		-moz-transition: opacity 100ms ease, -moz-transform 100ms ease;
+		-webkit-transition: opacity 100ms ease, -webkit-transform 100ms ease;
+		-ms-transition: opacity 100ms ease, -ms-transform 100ms ease;
+		transition: opacity 100ms ease, transform 100ms ease;
 		position: relative;
 		cursor: default;
 		text-align: center;
